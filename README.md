@@ -31,7 +31,13 @@ The direct image upload feature of the plugin is based on https://github.com/blu
 1. Include the javascript file in your HTML. For Example:
 
   ```html
-  <script src="../bower_components/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"                                          type="text/javascript"></script>
+  <script src="bower_components/jquery.ui/ui/widget.js"                                         type="text/javascript"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"              type="text/javascript"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"                    type="text/javascript"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"              type="text/javascript"></script>
+
+  <script src="bower_components/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js" type="text/javascript"></script>
   ```
 
 ### NPM
@@ -41,7 +47,7 @@ The direct image upload feature of the plugin is based on https://github.com/blu
 1. Include the javascript file in your HTML. For Example:
 
   ```html
-  <script src="../node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js"></script>
+  <script src="node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js"></script>
   ```
 
 For the server side NPM library, refer to https://github.com/cloudinary/cloudinary_npm.
