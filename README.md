@@ -24,31 +24,42 @@ The direct image upload feature of the plugin is based on https://github.com/blu
 
 1. Install the files using the following command. Use the optional `--save` parameter if you wish to save the dependency in your bower.json file.
 
-  ```shell
-  bower install cloudinary-jquery-file-upload
-  ```
+   ```shell
+   bower install cloudinary-jquery-file-upload
+   ```
 
 1. Include the javascript file in your HTML. For Example:
 
-  ```html
-  <script src="bower_components/jquery/dist/jquery.js"                                          type="text/javascript"></script>
-  <script src="bower_components/jquery.ui/ui/widget.js"                                         type="text/javascript"></script>
-  <script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"              type="text/javascript"></script>
-  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"                    type="text/javascript"></script>
-  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"              type="text/javascript"></script>
+   ```html
+   <script src="bower_components/jquery/dist/jquery.js"                                          type="text/javascript"></script>
+   <script src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"              type="text/javascript"></script>
+   <script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"              type="text/javascript"></script>
+   <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"                    type="text/javascript"></script>
+   <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"              type="text/javascript"></script>
 
-  <script src="bower_components/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js" type="text/javascript"></script>
-  ```
+   <script src="bower_components/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js" type="text/javascript"></script>
+   ```
 
 ### NPM
 
-1. Install the files using:
-  `npm  install cloudinary-jquery-file-upload`.
+1. Install the files using the following commands. Use the optional `--save` parameter if you wish to save the dependency in your `package.json` file.
+
+   ```shell
+   npm install jquery
+   npm install blueimp-file-upload
+   npm install cloudinary-jquery-file-upload
+   ```
 1. Include the javascript file in your HTML. For Example:
 
-  ```html
-  <script src="node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js"></script>
-  ```
+   ```html
+   <script src="node_modules/jquery/dist/jquery.js"                                          type="text/javascript"></script>
+   <script src="node_modules/blueimp-file-upload/js/vendor/jquery.ui.widget.js"                                         type="text/javascript"></script>
+   <script src="node_modules/blueimp-file-upload/js/jquery.iframe-transport.js"              type="text/javascript"></script>
+   <script src="node_modules/blueimp-file-upload/js/jquery.fileupload.js"                    type="text/javascript"></script>
+   <script src="node_modules/blueimp-file-upload/js/jquery.fileupload-image.js"              type="text/javascript"></script>
+
+   <script src="node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js"></script>
+   ```
 
 For the server side NPM library, refer to https://github.com/cloudinary/cloudinary_npm.
 
@@ -78,7 +89,11 @@ http://cloudinary.com/blog/direct_image_uploads_from_the_browser_to_the_cloud_wi
 The Cloudinary Documentation can be found at:
 http://cloudinary.com/documentation
 
+### Cloudinary JavaScript library
+
 The Cloudinary JavaScript library API reference can be found at: [https://cloudinary.github.io/pkg-cloudinary-jquery-file-upload](https://cloudinary.github.io/pkg-cloudinary-jquery-file-upload)
+
+The Cloudinary JavaScript library provides several classes, defined under the "`cloudinary`" domain.
 
 #### Configuration
 
@@ -95,7 +110,7 @@ $.cloudinary.config({ cloud_name: "demo"});
 ##### Explicitly
 
 ```javascript
-var cl = cloudinary.Cloudinary.new( { cloud_name: "demo"});
+var cl = cloudinary.CloudinaryJQuery.new( { cloud_name: "demo"});
 ```
 
 ##### Using the config function
@@ -103,7 +118,7 @@ var cl = cloudinary.Cloudinary.new( { cloud_name: "demo"});
 ```javascript
 
 // Using the config function
-var cl = cloudinary.Cloudinary.new();
+var cl = cloudinary.CloudinaryJQuery.new();
 cl.config( "cloud_name", "demo");
 ```
 
