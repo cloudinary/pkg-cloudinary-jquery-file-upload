@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "jquery": ">=1.6",
-    "blueimp-file-upload": ">=7.2.1",
-    "jquery.ui": "~1.11.4"
+    "blueimp-file-upload": ">=7.2.1"
   },
   "keywords": [
     "blueimp",
