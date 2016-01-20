@@ -53,7 +53,7 @@ The direct image upload feature of the plugin is based on https://github.com/blu
 
    ```html
    <script src="node_modules/jquery/dist/jquery.js"                                          type="text/javascript"></script>
-   <script src="node_modules/blueimp-file-upload/js/vendor/jquery.ui.widget.js"                                         type="text/javascript"></script>
+   <script src="node_modules/blueimp-file-upload/js/vendor/jquery.ui.widget.js"              type="text/javascript"></script>
    <script src="node_modules/blueimp-file-upload/js/jquery.iframe-transport.js"              type="text/javascript"></script>
    <script src="node_modules/blueimp-file-upload/js/jquery.fileupload.js"                    type="text/javascript"></script>
    <script src="node_modules/blueimp-file-upload/js/jquery.fileupload-image.js"              type="text/javascript"></script>
