@@ -18,8 +18,8 @@
     "url": "https://github.com/cloudinary/cloudinary_js/issues"
   },
   "homepage": "https://github.com/cloudinary/cloudinary_js",
-  "dependencies": {
-	  "jquery": "^2.2.4",
+  "peerDependencies": {
+	  "jquery": ">=2.2.4",
 	  "blueimp-file-upload": "^9.11.2"
   }
 
