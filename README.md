@@ -5,7 +5,7 @@ This was a distribution repository for cloudinary-jquery-file-upload. The source
 
 ## Installation and Usage
 
-See here: https://github.com/cloudinary/cloudinary_js/tree/master/pkg/cloudinary-jquery
+See here: https://github.com/cloudinary/cloudinary_js/tree/master/pkg/cloudinary-jquery-file-upload
 
 ## Additional resources
 
